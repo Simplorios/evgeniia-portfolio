@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local'
+
 import "./globals.css";
+import { Navbar } from "~/components/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const edNimpkish= localFont({
+  src: './fonts/ED-Nimpkish-Regular.otf',
+  display: 'swap',
+  variable: '--font-nimpkish',
 });
 
 export const metadata: Metadata = {
@@ -24,10 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    <body
+        className={`${edNimpkish.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
