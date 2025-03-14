@@ -6,6 +6,8 @@
   --primary: #212121;
   --primary-foreground: #FFFFFF;
   --primary-tag: #8D8D8D;
+  --primary-grey: #6D6D6D;
+  --primary-grey-background: #F2F2F2;
 }
 
 @theme inline {
@@ -14,6 +16,8 @@
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary-tag: var(--primary-tag);
+  --color-primary-grey: var(--primary-grey);
+  --color-primary-grey-background: var(--primary-grey-background);
 }
 
 /*@media (prefers-color-scheme: dark) {*/

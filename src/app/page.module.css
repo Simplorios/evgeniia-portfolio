@@ -1,0 +1,14 @@
+.letter-above {
+    @apply relative;
+}
+
+.letter-above::before {
+    content: attr(data-letter-above);
+    position: absolute;
+
+    top: -2.625rem;
+    left: -30%;
+
+    @apply text-[2.2rem] font-(family-name:--font-nimpkish);
+    transform: rotate(180deg) scaleX(-1);
+}

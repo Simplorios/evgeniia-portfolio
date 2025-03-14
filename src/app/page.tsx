@@ -1,8 +1,9 @@
 import { Button } from "~/components/button";
-import { Card } from "~/components/card";
+import { Card, CardTags, CardTitle } from "~/components/card";
+import styles from './page.module.css';
+import { Tag } from "~/components/tag";
 
 export default function Home() {
-
     return (
         <div className="container mx-auto">
             <section className="h-dvh">
@@ -16,9 +17,72 @@ export default function Home() {
                 </div>
             </section>
             <section className="py-5 grid grid-flow-col gap-10">
-                <Card title="Uber Georgia" titleVariant="white" imgSrc="/uber-mockup.png"
-                      tags={['social media', 'AI']}/>
-                <Card title="Uber Georgia" imgSrc="/icji-identity-mockup.png" tags={['identity', 'brand book']}/>
+                <Card imgProps={{ width: 559, height: 524, src: "/uber-mockup.png" }}>
+                    <CardTitle color="white">
+                        Uber Georgia
+                    </CardTitle>
+                    <CardTags tags={['social media', 'AI']}/>
+                </Card>
+                <Card imgProps={{ width: 559, height: 524, src: "/icji-identity-mockup.png" }}>
+                    <CardTitle>
+                        Uber Georgia
+                    </CardTitle>
+                    <CardTags tags={['identity', 'brand book']}/>
+                </Card>
+            </section>
+            <section className="py-5">
+                <Card imgProps={{ width: 1160, height: 524, src: "/pepsico-mockup.png" }}>
+                    <CardTitle color="white" position="center">
+                        PepsiCo web-game
+                    </CardTitle>
+                    <CardTags tags={['web-site', 'illustration', 'ai']} position="center"/>
+                </Card>
+
+            </section>
+            <section className="pt-10 pb-20">
+                <p className="text-[5.375rem]/[1.37] text-center font-(family-name:--font-nimpkish)">hello!</p>
+                <div className="mt-16 grid grid-flow-col grid-cols-2 gap-10">
+                    <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background">
+                        <h5 className="text-[2.625rem]">
+                            I’m Evgen
+                            <span className={styles['letter-above']}
+                                  data-letter-above={'W'}>
+                                ii
+                            </span>
+                            a
+                        </h5>
+                        <p className="mt-7.5 text-primary-grey">
+                            The creator of this page<br/>
+                            & multidisciplinary designer
+                        </p>
+                        <p className="mt-4 text-primary-grey">
+                            I develop complex identities,<br/>
+                            social networks design, presintations<br/>
+                            trendy print materials, and websites
+                        </p>
+                        <p className="mt-4 text-primary-grey">
+                            I work in Figma, Photoshop,<br/>
+                            Illustrator, use new technologies<br/>
+                            and AI in my designs
+                        </p>
+                    </div>
+                    <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background">
+                        <div className="grid justify-between grid-flow-col items-start">
+                            <h5 className="text-[2.625rem]/[1]">
+                                Let's discuss<br/>
+                                your project
+                            </h5>
+                            <Tag>
+                                10-15 min
+                            </Tag>
+                        </div>
+                        <p className="mt-7.5 text-primary-grey">
+                            Let's figure out the task,<br/>
+                            fill out a small brief together<br/>
+                            and schedule a call
+                        </p>
+                    </div>
+                </div>
             </section>
         </div>
     );

@@ -2,16 +2,22 @@ import React from 'react';
 import { getImageProps } from "next/image";
 import { ImageProps } from "next/dist/shared/lib/get-img-props";
 import clsx from "clsx";
+import { Tag } from "~/components/tag";
 
 type CardProps = {
-    title: string;
-    titleVariant?: 'black' | 'white';
-    imgSrc: ImageProps['src'];
-    tags: string[];
+    children: React.ReactNode;
+    imgProps: Omit<ImageProps, 'alt'> & Partial<Pick<ImageProps, 'alt'>>;
 }
 
 type CardTagProps = {
+    tags: string[];
+    position?: 'center';
+}
+
+type CardTitleProps = {
     children: React.ReactNode;
+    color?: 'black' | 'white';
+    position?: 'center';
 }
 
 function getBackgroundImage(srcSet = '') {
@@ -25,32 +31,42 @@ function getBackgroundImage(srcSet = '') {
     return `image-set(${imageSet})`
 }
 
-
-const CardTag: React.FC<CardTagProps> = ({ children }) => {
-    return <span className="px-3 py-2.5 text-primary-tag bg-primary rounded-lg">{children}</span>
+const titleVariants = {
+    colors: {
+        white: 'text-white',
+        black: 'text-primary'
+    },
+    positions: {
+        center: 'text-center',
+    }
 }
 
-const variants = {
-    white: 'text-white',
-    black: 'text-primary',
+export const CardTitle: React.FC<CardTitleProps> = ({ children, position, color = 'black' }) => {
+    return <p className={clsx("text-[2.625rem]", titleVariants.colors[color], titleVariants.positions[position])}>
+        {children}
+    </p>
 }
 
-export const Card: React.FC<CardProps> = ({ title, titleVariant= 'black', imgSrc, tags }) => {
+const tagsVariants = {
+    positions: {
+        center: 'justify-center',
+    }
+}
+
+export const CardTags: React.FC<CardTagProps> = ({ tags, position }) => {
+    return <div className={clsx("mt-3 grid grid-flow-col auto-cols-max gap-3", tagsVariants.positions[position])}>
+        {tags.map((tag) => <Tag key={tag}>{tag}</Tag>)}
+    </div>
+}
+
+export const Card: React.FC<CardProps> = ({ children, imgProps }) => {
     const {
         props: { srcSet },
-    } = getImageProps({ alt: '', width: 559, height: 524, src: imgSrc })
+    } = getImageProps({ alt: '', ...imgProps })
     const backgroundImage = getBackgroundImage(srcSet)
 
-    const titleClassName = variants[titleVariant];
 
     return <div className={`h-131 px-7.5 py-6 rounded-xl bg-no-repeat bg-cover bg-center`} style={{ backgroundImage }}>
-        <p className={clsx("text-[2.625rem]", titleClassName)}>{title}</p>
-        <div className="mt-3 grid grid-flow-col auto-cols-max gap-3">
-            {tags.map((tag) => (
-                <CardTag key={tag}>
-                    {tag}
-                </CardTag>
-            ))}
-        </div>
+        {children}
     </div>
 }
