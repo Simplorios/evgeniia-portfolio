@@ -42,7 +42,7 @@ const titleVariants = {
 }
 
 export const CardTitle: React.FC<CardTitleProps> = ({ children, position, color = 'black' }) => {
-    return <p className={clsx("text-[2.625rem]", titleVariants.colors[color], titleVariants.positions[position])}>
+    return <p className={clsx("text-[2.625rem]/[0.86]", titleVariants.colors[color], titleVariants.positions[position])}>
         {children}
     </p>
 }

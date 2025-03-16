@@ -2,6 +2,7 @@ import { Button } from "~/components/button";
 import { Card, CardTags, CardTitle } from "~/components/card";
 import styles from './page.module.css';
 import { Tag } from "~/components/tag";
+import { ProjectsContainer } from "~/components/projects-container";
 
 export default function Home() {
     return (
@@ -16,7 +17,7 @@ export default function Home() {
                     </Button>
                 </div>
             </section>
-            <section className="py-5 grid grid-flow-col gap-10">
+            <ProjectsContainer className="py-5 grid grid-flow-col auto-cols-fr gap-10">
                 <Card imgProps={{ width: 559, height: 524, src: "/uber-mockup.png" }}>
                     <CardTitle color="white">
                         Uber Georgia
@@ -25,20 +26,19 @@ export default function Home() {
                 </Card>
                 <Card imgProps={{ width: 559, height: 524, src: "/icji-identity-mockup.png" }}>
                     <CardTitle>
-                        Uber Georgia
+                        ICJI identity
                     </CardTitle>
                     <CardTags tags={['identity', 'brand book']}/>
                 </Card>
-            </section>
-            <section className="py-5">
+            </ProjectsContainer>
+            <ProjectsContainer className="py-5">
                 <Card imgProps={{ width: 1160, height: 524, src: "/pepsico-mockup.png" }}>
                     <CardTitle color="white" position="center">
                         PepsiCo web-game
                     </CardTitle>
                     <CardTags tags={['web-site', 'illustration', 'ai']} position="center"/>
                 </Card>
-
-            </section>
+            </ProjectsContainer>
             <section className="pt-10 pb-20">
                 <p className="text-[5.375rem]/[1.37] text-center font-(family-name:--font-nimpkish)">hello!</p>
                 <div className="mt-16 grid grid-flow-col grid-cols-2 gap-10">
@@ -84,6 +84,21 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <ProjectsContainer>
+                <Card imgProps={{ width: 559, height: 524, src: "/gc-mockup.png" }}>
+                    <CardTitle>
+                        Air Products<br/>
+                        gas company
+                    </CardTitle>
+                    <CardTags tags={['social media', 'brand materials']}/>
+                </Card>
+                <Card imgProps={{ width: 559, height: 524, src: "/gc-mockup.png" }}>
+                    <CardTitle color="white">
+                        Sibur — Mendeleev project
+                    </CardTitle>
+                    <CardTags tags={['landing page', 'promo']}/>
+                </Card>
+            </ProjectsContainer>
         </div>
     );
 }
