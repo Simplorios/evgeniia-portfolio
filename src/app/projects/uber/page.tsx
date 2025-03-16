@@ -1,58 +1,44 @@
 import Image from "next/image";
+import { ProjectHead } from "~/components/project-head";
+import React from "react";
 
-export default function Home() {
+
+export default function Uber() {
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-                Убер
-            </main>
-            <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-                <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/file.svg"
-                        alt="File icon"
-                        width={16}
-                        height={16}
-                    />
-                    Learn
-                </a>
-                <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/window.svg"
-                        alt="Window icon"
-                        width={16}
-                        height={16}
-                    />
-                    Examples
-                </a>
-                <a
-                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                    href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image
-                        aria-hidden
-                        src="/globe.svg"
-                        alt="Globe icon"
-                        width={16}
-                        height={16}
-                    />
-                    Go to nextjs.org →
-                </a>
-            </footer>
-        </div>
+        <>
+            <ProjectHead title={(
+                <>
+                    Uber Georgia<br/>
+                    Instagram
+                </>)}
+                         description="Development of Instagram feed for launching Uber Black in Tbilisi, as part of
+                work at Social Animals agency team"
+                         task="Task: to create an Instagram page based on the main brand book, while expressing the authenticity
+                    and spirit of the city of Tbilisi"
+                         imgSrc="/uber-mockup.png"
+                         imgAlt="Uber"
+            />
+
+            <section className="container mx-auto mt-25">
+                <h2 className="text-5xl/[1]">Instagram feed</h2>
+                <Image className="mt-10" src="/uber-feed.png" alt="Uber Feed" width={1160} height={4204.74}/>
+            </section>
+
+            <section className="pt-27.5 pb-31.5 bg-primary-grey-background">
+                <div className="container mx-auto">
+                    <h2 className="text-5xl/[1]">3D forms</h2>
+                    <div className="mt-7.5 grid grid-cols-3 grid-rows-2 gap-5">
+                        <Image className="col-1 row-1" src="/uber-3d-forms-1.png" alt="3d froms 1" width={374}
+                               height={374}/>
+                        <Image className="col-1 row-2" src="/uber-3d-forms-2.png" alt="3d froms 2" width={374}
+                               height={374}/>
+                        <Image className="col-2 row-2" src="/uber-3d-forms-3.png" alt="3d froms 3" width={374}
+                               height={374}/>
+                        <Image className="col-3 row-2" src="/uber-3d-forms-4.png" alt="3d froms 4" width={374}
+                               height={374}/>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 }
