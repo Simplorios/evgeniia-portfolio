@@ -3,11 +3,12 @@ import { Card, CardTags, CardTitle } from "~/components/card";
 import styles from './page.module.css';
 import { Tag } from "~/components/tag";
 import { ProjectsContainer } from "~/components/projects-container";
+import { LottiePlayer } from "~/components/lottie-player";
 
 export default function Home() {
     return (
         <div className="container mx-auto">
-            <section className="h-dvh">
+            <section className="relative h-[1066px]">
                 <div className="pt-[221px]">
                     <h1 className="text-[5.375rem]/[1.02] font-(family-name:--font-nimpkish)">
                         dEsign that<br/>aMplifiEs<br/>your braNd
@@ -15,6 +16,9 @@ export default function Home() {
                     <Button className="mt-8">
                         View work
                     </Button>
+                </div>
+                <div className="absolute h-[1066px] w-[1566px] top-0 left-38.5">
+                    <LottiePlayer src={'/lottie/snake-d-to-u.json'} loop={false} autoplay/>
                 </div>
             </section>
             <ProjectsContainer className="py-5 grid grid-flow-col auto-cols-fr gap-10">
