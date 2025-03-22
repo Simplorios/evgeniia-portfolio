@@ -28,7 +28,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <ProjectsContainer className="py-5 grid grid-flow-col auto-cols-fr gap-10">
+      <ProjectsContainer>
         <Card
           linkProps={{ href: '/projects/uber' }}
           imgProps={{ width: 559, height: 524, src: '/uber-mockup.png' }}
@@ -48,7 +48,7 @@ export default function Home() {
           <CardTags tags={['identity', 'brand book']} />
         </Card>
       </ProjectsContainer>
-      <ProjectsContainer className="py-5">
+      <ProjectsContainer>
         <Card
           linkProps={{ href: '/projects/pepsico' }}
           imgProps={{ width: 1160, height: 524, src: '/pepsico-mockup.png' }}
