@@ -8,7 +8,12 @@ export const Navbar = () => {
   return (
     <header className="shadow-header">
       <div className="h-[99] container mx-auto flex justify-between items-center">
-        <Image src="/logo.svg" width={44} height={61} alt="Logo" />
+        <Image
+          src="/evgeniia-portfolio/logo.svg"
+          width={44}
+          height={61}
+          alt="Logo"
+        />
         <nav className="flex flex-col justify-center">
           <ul className="inline-grid grid-flow-col auto-rows-min gap-17">
             <li>

@@ -15,15 +15,21 @@ type CardProps = {
   linkProps: Pick<LinkProps, 'href'>
 }
 
-function getBackgroundImage(srcSet = '') {
-  const imageSet = srcSet
-    .split(', ')
-    .map(str => {
-      const [url, dpi] = str.split(' ')
-      return `url("${url}") ${dpi}`
-    })
-    .join(', ')
-  return `image-set(${imageSet})`
+function getBackgroundImage(src?: string, srcSet?: string) {
+  if (srcSet) {
+    const imageSet = srcSet
+      .split(', ')
+      .map(str => {
+        const [url, dpi] = str.split(' ')
+        return `url("${url}") ${dpi}`
+      })
+      .join(', ')
+    return `image-set(${imageSet})`
+  }
+
+  if (src) return `url(${src})`
+
+  return ''
 }
 
 const titleVariants = cva('text-[2.625rem]/[0.86]', {
@@ -81,9 +87,9 @@ export const Card: React.FC<CardProps> = ({
   linkProps,
 }) => {
   const {
-    props: { srcSet },
+    props: { src, srcSet },
   } = getImageProps({ alt: '', ...imgProps })
-  const backgroundImage = getBackgroundImage(srcSet)
+  const backgroundImage = getBackgroundImage(src, srcSet)
 
   return (
     <Link

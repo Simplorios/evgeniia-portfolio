@@ -27,14 +27,14 @@ export default function ICJI() {
         title="Identity for The International Center for Joint Initiatives"
         description="ICJI is a platform fostering economic and business collaboration between Russia and its global partners"
         task="Task: to develop a visual identity for the partnership initiative of ICJI with China, creating a holistic and effective brand image for the project"
-        imgSrc="/icji-identity-mockup.png"
+        imgSrc="/evgeniia-portfolio/icji-identity-mockup.png"
         imgAlt="ICJI"
       />
       <section className="container mx-auto mt-25">
         <h2 className="text-5xl/[1]">Result:</h2>
         <Image
           className="mt-10"
-          src="/icji-result.png"
+          src="/evgeniia-portfolio/icji-result.png"
           alt="ICJI Result"
           width={1215}
           height={1039}
@@ -50,13 +50,13 @@ export default function ICJI() {
 
         <div className="grid grid-cols-2 gap-x-14 items-center">
           <Image
-            src="/icji/result/icji-in-1.png"
+            src="/evgeniia-portfolio/icji/result/icji-in-1.png"
             alt="Inspiration 1"
             width={187.67}
             height={187.67}
           />
           <Image
-            src="/icji/arrow.svg"
+            src="/evgeniia-portfolio/icji/arrow.svg"
             alt="Arrow"
             width={56.85}
             height={24.47}
@@ -64,13 +64,13 @@ export default function ICJI() {
         </div>
         <div className="grid grid-cols-2 gap-x-14 items-center">
           <Image
-            src="/icji/result/icji-in-2.png"
+            src="/evgeniia-portfolio/icji/result/icji-in-2.png"
             alt="Inspiration 2"
             width={187.67}
             height={187.67}
           />
           <Image
-            src="/icji/arrow.svg"
+            src="/evgeniia-portfolio/icji/arrow.svg"
             alt="Arrow"
             width={56.85}
             height={24.47}
@@ -78,13 +78,13 @@ export default function ICJI() {
         </div>
         <div className="grid grid-cols-2 gap-x-14 items-center">
           <Image
-            src="/icji/result/icji-in-3.png"
+            src="/evgeniia-portfolio/icji/result/icji-in-3.png"
             alt="Inspiration 3"
             width={187.67}
             height={187.67}
           />
           <Image
-            src="/icji/arrow.svg"
+            src="/evgeniia-portfolio/icji/arrow.svg"
             alt="Arrow"
             width={56.85}
             height={24.47}
@@ -92,7 +92,7 @@ export default function ICJI() {
         </div>
         <Image
           className="row-span-3"
-          src="/icji/result/icji-in-result.png"
+          src="/evgeniia-portfolio/icji/result/icji-in-result.png"
           alt="Inspiration result"
           width={369}
           height={699}
@@ -112,33 +112,33 @@ export default function ICJI() {
           </p>
           <div className="grid grid-flow-col items-center gap-x-6">
             <Image
-              src="/icji/transform/icji-transform-1.png"
+              src="/evgeniia-portfolio/icji/transform/icji-transform-1.png"
               alt="Transform 1"
               width={157}
               height={157}
             />
             <Image
-              src="/icji/arrow.svg"
+              src="/evgeniia-portfolio/icji/arrow.svg"
               alt="Arrow"
               width={49.5}
               height={21.3}
             />
 
             <Image
-              src="/icji/transform/icji-transform-2.png"
+              src="/evgeniia-portfolio/icji/transform/icji-transform-2.png"
               alt="Transform 2"
               width={157}
               height={157}
             />
             <Image
-              src="/icji/arrow.svg"
+              src="/evgeniia-portfolio/icji/arrow.svg"
               alt="Arrow"
               width={49.5}
               height={21.3}
             />
 
             <Image
-              src="/icji/result/icji-in-result.png"
+              src="/evgeniia-portfolio/icji/result/icji-in-result.png"
               alt="Transform result"
               width={157}
               height={298}
@@ -154,7 +154,7 @@ export default function ICJI() {
         <h2 className="text-5xl/[1]">Typefaces</h2>
         <Image
           className="row-span-3"
-          src="/icji/typefaces/font.png"
+          src="/evgeniia-portfolio/icji/typefaces/font.png"
           alt="Font"
           width={780}
           height={498}
@@ -164,7 +164,7 @@ export default function ICJI() {
       <Section className="grid grid-cols-2 justify-between gap-y-22">
         <h2 className="text-5xl/[1]">Business card</h2>
         <Image
-          src="/icji/products/business-card.png"
+          src="/evgeniia-portfolio/icji/products/business-card.png"
           alt="Business card"
           width={693}
           height={462}
@@ -172,7 +172,7 @@ export default function ICJI() {
 
         <h2 className="text-5xl/[1]">Envelope</h2>
         <Image
-          src="/icji/products/envelope.png"
+          src="/evgeniia-portfolio/icji/products/envelope.png"
           alt="Envelope"
           width={693}
           height={462}
@@ -180,7 +180,7 @@ export default function ICJI() {
 
         <h2 className="text-5xl/[1]">Tote bags</h2>
         <Image
-          src="/icji/products/bag.png"
+          src="/evgeniia-portfolio/icji/products/bag.png"
           alt="Tote bags"
           width={693}
           height={616}
@@ -188,7 +188,7 @@ export default function ICJI() {
 
         <h2 className="text-5xl/[1]">Box</h2>
         <Image
-          src="/icji/products/box.png"
+          src="/evgeniia-portfolio/icji/products/box.png"
           alt="Box"
           width={693}
           height={597}
@@ -197,9 +197,24 @@ export default function ICJI() {
       <Section className="border-none">
         <h2 className="text-5xl/[1]">Tote bags</h2>
         <div className="mt-20 grid grid-cols-3 justify-between">
-          <Image src="/icji/smm/1.png" alt="SMM 1" width={348} height={598} />
-          <Image src="/icji/smm/2.png" alt="SMM 2" width={348} height={598} />
-          <Image src="/icji/smm/3.png" alt="SMM 3" width={348} height={598} />
+          <Image
+            src="/evgeniia-portfolio/icji/smm/1.png"
+            alt="SMM 1"
+            width={348}
+            height={598}
+          />
+          <Image
+            src="/evgeniia-portfolio/icji/smm/2.png"
+            alt="SMM 2"
+            width={348}
+            height={598}
+          />
+          <Image
+            src="/evgeniia-portfolio/icji/smm/3.png"
+            alt="SMM 3"
+            width={348}
+            height={598}
+          />
         </div>
       </Section>
     </>

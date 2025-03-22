@@ -22,7 +22,7 @@ export default function Home() {
         </div>
         <div className="absolute h-[1066px] w-[1566px] top-0 left-38.5">
           <LottiePlayer
-            src={'/lottie/snake-d-to-u.json'}
+            src="/evgeniia-portfolio/lottie/snake-d-to-u.json"
             loop={false}
             autoplay
           />
@@ -31,7 +31,11 @@ export default function Home() {
       <ProjectsContainer>
         <Card
           linkProps={{ href: '/projects/uber' }}
-          imgProps={{ width: 559, height: 524, src: '/uber-mockup.png' }}
+          imgProps={{
+            width: 559,
+            height: 524,
+            src: '/evgeniia-portfolio/uber-mockup.png',
+          }}
         >
           <CardTitle color="white">Uber Georgia</CardTitle>
           <CardTags tags={['social media', 'AI']} />
@@ -41,7 +45,7 @@ export default function Home() {
           imgProps={{
             width: 559,
             height: 524,
-            src: '/icji-identity-mockup.png',
+            src: '/evgeniia-portfolio/icji-identity-mockup.png',
           }}
         >
           <CardTitle>ICJI identity</CardTitle>
@@ -51,7 +55,11 @@ export default function Home() {
       <ProjectsContainer>
         <Card
           linkProps={{ href: '/projects/pepsico' }}
-          imgProps={{ width: 1160, height: 524, src: '/pepsico-mockup.png' }}
+          imgProps={{
+            width: 1160,
+            height: 524,
+            src: '/evgeniia-portfolio/pepsico-mockup.png',
+          }}
         >
           <CardTitle color="white" position="center">
             PepsiCo web-game
@@ -119,7 +127,11 @@ export default function Home() {
       <ProjectsContainer>
         <Card
           linkProps={{ href: '/projects/air-products' }}
-          imgProps={{ width: 559, height: 524, src: '/gc-mockup.png' }}
+          imgProps={{
+            width: 559,
+            height: 524,
+            src: '/evgeniia-portfolio/gc-mockup.png',
+          }}
         >
           <CardTitle>
             Air Products
@@ -130,7 +142,11 @@ export default function Home() {
         </Card>
         <Card
           linkProps={{ href: '/projects/sibur' }}
-          imgProps={{ width: 559, height: 524, src: '/gc-mockup.png' }}
+          imgProps={{
+            width: 559,
+            height: 524,
+            src: '/evgeniia-portfolio/gc-mockup.png',
+          }}
         >
           <CardTitle color="white">Sibur — Mendeleev project</CardTitle>
           <CardTags tags={['landing page', 'promo']} />
