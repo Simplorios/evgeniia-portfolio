@@ -20,6 +20,9 @@
   --color-primary-grey-background: var(--primary-grey-background);
 
   --shadow-header: 0px 1px 3px 0px #0000001A;
+
+  --breakpoint-xl: 72.5rem;
+  --breakpoint-2xl: initial;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
