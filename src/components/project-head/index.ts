@@ -1,1 +1,1 @@
-export { ProjectHead } from './project-head';
+export { ProjectHead } from './project-head'

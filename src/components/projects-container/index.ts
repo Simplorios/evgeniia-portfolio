@@ -1,1 +1,1 @@
-export { ProjectsContainer } from './projects-container';
+export { ProjectsContainer } from './projects-container'
