@@ -1,7 +1,7 @@
-import { Button } from '~/components/button'
+import { ProjectsContainer } from '~/components/projects-container'
 import { Card, CardTags, CardTitle } from '~/components/card'
 import { LottiePlayer } from '~/components/lottie-player'
-import { ProjectsContainer } from '~/components/projects-container'
+import { Button } from '~/components/button'
 import { Tag } from '~/components/tag'
 
 import styles from './page.module.css'
@@ -70,18 +70,18 @@ export default function Home() {
               </span>
               a
             </h5>
-            <p className="mt-7.5 text-primary-grey">
+            <p className="mt-7.5 text-lg text-primary-grey">
               The creator of this page
               <br />& multidisciplinary designer
             </p>
-            <p className="mt-4 text-primary-grey">
+            <p className="mt-4 text-lg text-primary-grey">
               I develop complex identities,
               <br />
               social networks design, presintations
               <br />
               trendy print materials, and websites
             </p>
-            <p className="mt-4 text-primary-grey">
+            <p className="mt-4 text-lg text-primary-grey">
               I work in Figma, Photoshop,
               <br />
               Illustrator, use new technologies
@@ -98,7 +98,7 @@ export default function Home() {
               </h5>
               <Tag>10-15 min</Tag>
             </div>
-            <p className="mt-7.5 text-primary-grey">
+            <p className="mt-7.5 text-lg text-primary-grey">
               Let&apos;s figure out the task,
               <br />
               fill out a small brief together
