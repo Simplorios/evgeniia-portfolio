@@ -18,6 +18,8 @@
   --color-primary-tag: var(--primary-tag);
   --color-primary-grey: var(--primary-grey);
   --color-primary-grey-background: var(--primary-grey-background);
+
+  --shadow-header: 0px 1px 3px 0px #0000001A;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
