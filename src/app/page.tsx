@@ -1,7 +1,7 @@
-import { ProjectsContainer } from '~/components/projects-container'
+import { Button } from '~/components/button'
 import { Card, CardTags, CardTitle } from '~/components/card'
 import { LottiePlayer } from '~/components/lottie-player'
-import { Button } from '~/components/button'
+import { ProjectsContainer } from '~/components/projects-container'
 import { Tag } from '~/components/tag'
 
 import styles from './page.module.css'
@@ -29,11 +29,15 @@ export default function Home() {
         </div>
       </section>
       <ProjectsContainer className="py-5 grid grid-flow-col auto-cols-fr gap-10">
-        <Card imgProps={{ width: 559, height: 524, src: '/uber-mockup.png' }}>
+        <Card
+          linkProps={{ href: '/projects/uber' }}
+          imgProps={{ width: 559, height: 524, src: '/uber-mockup.png' }}
+        >
           <CardTitle color="white">Uber Georgia</CardTitle>
           <CardTags tags={['social media', 'AI']} />
         </Card>
         <Card
+          linkProps={{ href: '/projects/icji' }}
           imgProps={{
             width: 559,
             height: 524,
@@ -46,6 +50,7 @@ export default function Home() {
       </ProjectsContainer>
       <ProjectsContainer className="py-5">
         <Card
+          linkProps={{ href: '/projects/pepsico' }}
           imgProps={{ width: 1160, height: 524, src: '/pepsico-mockup.png' }}
         >
           <CardTitle color="white" position="center">
@@ -89,7 +94,7 @@ export default function Home() {
               and AI in my designs
             </p>
           </div>
-          <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background">
+          <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background flex flex-col">
             <div className="grid justify-between grid-flow-col items-start">
               <h5 className="text-[2.625rem]/[1]">
                 Let&apos;s discuss
@@ -98,18 +103,24 @@ export default function Home() {
               </h5>
               <Tag>10-15 min</Tag>
             </div>
-            <p className="mt-7.5 text-lg text-primary-grey">
+            <p className="mt-7.5 text-lg text-primary-grey grow">
               Let&apos;s figure out the task,
               <br />
               fill out a small brief together
               <br />
               and schedule a call
             </p>
+            <Button size="l" className="mt-7.5 w-full">
+              Telegram →
+            </Button>
           </div>
         </div>
       </section>
       <ProjectsContainer>
-        <Card imgProps={{ width: 559, height: 524, src: '/gc-mockup.png' }}>
+        <Card
+          linkProps={{ href: '/projects/air-products' }}
+          imgProps={{ width: 559, height: 524, src: '/gc-mockup.png' }}
+        >
           <CardTitle>
             Air Products
             <br />
@@ -117,7 +128,10 @@ export default function Home() {
           </CardTitle>
           <CardTags tags={['social media', 'brand materials']} />
         </Card>
-        <Card imgProps={{ width: 559, height: 524, src: '/gc-mockup.png' }}>
+        <Card
+          linkProps={{ href: '/projects/sibur' }}
+          imgProps={{ width: 559, height: 524, src: '/gc-mockup.png' }}
+        >
           <CardTitle color="white">Sibur — Mendeleev project</CardTitle>
           <CardTags tags={['landing page', 'promo']} />
         </Card>

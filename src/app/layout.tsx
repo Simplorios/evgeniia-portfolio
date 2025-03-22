@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import localFont from 'next/font/local'
+import Link from 'next/link'
 
+import { Button } from '~/components/button'
 import { Navbar } from '~/components/navbar'
 
 import './globals.css'
@@ -26,6 +28,11 @@ export default function RootLayout({
       <body className={`${edNimpkish.variable} antialiased`}>
         <Navbar />
         <main>{children}</main>
+        <footer className="bg-primary h-32.5 flex justify-center items-center">
+          <Button size="m" color="graphite">
+            <Link href="/">Return to main page</Link>
+          </Button>
+        </footer>
       </body>
     </html>
   )

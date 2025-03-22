@@ -8,6 +8,7 @@
   --primary-tag: #8d8d8d;
   --primary-grey: #6d6d6d;
   --primary-grey-background: #f2f2f2;
+  --graphite: #262626
 }
 
 @theme inline {
@@ -18,6 +19,7 @@
   --color-primary-tag: var(--primary-tag);
   --color-primary-grey: var(--primary-grey);
   --color-primary-grey-background: var(--primary-grey-background);
+  --color-graphite: var(--graphite);
 
   --shadow-header: 0px 1px 3px 0px #0000001A;
 

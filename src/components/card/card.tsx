@@ -2,6 +2,7 @@ import React from 'react'
 
 import { ImageProps } from 'next/dist/shared/lib/get-img-props'
 import { getImageProps } from 'next/image'
+import Link, { LinkProps } from 'next/link'
 
 import clsx from 'clsx'
 
@@ -10,6 +11,7 @@ import { Tag } from '~/components/tag'
 type CardProps = {
   children: React.ReactNode
   imgProps: Omit<ImageProps, 'alt'> & Partial<Pick<ImageProps, 'alt'>>
+  linkProps: Pick<LinkProps, 'href'>
 }
 
 type CardTagProps = {
@@ -83,18 +85,23 @@ export const CardTags: React.FC<CardTagProps> = ({ tags, position }) => {
   )
 }
 
-export const Card: React.FC<CardProps> = ({ children, imgProps }) => {
+export const Card: React.FC<CardProps> = ({
+  children,
+  imgProps,
+  linkProps,
+}) => {
   const {
     props: { srcSet },
   } = getImageProps({ alt: '', ...imgProps })
   const backgroundImage = getBackgroundImage(srcSet)
 
   return (
-    <div
-      className={`h-131 px-7.5 py-6 rounded-xl bg-no-repeat bg-cover bg-center`}
+    <Link
+      className={`h-131 px-7.5 py-6 rounded-xl bg-no-repeat bg-cover bg-center transition duration-100 ease-in-out hover:scale-102`}
       style={{ backgroundImage }}
+      href={linkProps.href}
     >
       {children}
-    </div>
+    </Link>
   )
 }
