@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { Button } from '~/components/button'
 import { Card, CardTags, CardTitle } from '~/components/card'
 import { LottiePlayer } from '~/components/lottie-player'
@@ -18,7 +20,9 @@ export default function Home() {
             <br />
             your braNd
           </h1>
-          <Button className="mt-8">View work</Button>
+          <Button className="mt-8" asChild={true}>
+            <Link href="#projects">View work</Link>
+          </Button>
         </div>
         <div className="absolute h-[1066px] w-[1566px] top-0 left-38.5">
           <LottiePlayer
@@ -28,7 +32,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <ProjectsContainer>
+      <ProjectsContainer id="projects">
         <Card
           linkProps={{ href: '/projects/uber' }}
           imgProps={{
@@ -70,7 +74,7 @@ export default function Home() {
           />
         </Card>
       </ProjectsContainer>
-      <section className="pt-10 pb-20">
+      <section id="about" className="pt-10 pb-20">
         <p className="text-[5.375rem]/[1.37] text-center font-(family-name:--font-nimpkish)">
           hello!
         </p>

@@ -1,15 +1,17 @@
 import React from 'react'
 
-type ProjectsContainerProps = {
-  children: React.ReactNode
-}
+import clsx from 'clsx'
+
+type ProjectsContainerProps = React.ComponentProps<'section'>
 
 export const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
-  children,
+  className,
+  ...props
 }) => {
   return (
-    <section className="py-5 grid grid-flow-col auto-cols-fr gap-10">
-      {children}
-    </section>
+    <section
+      className={clsx('py-5 grid grid-flow-col auto-cols-fr gap-10', className)}
+      {...props}
+    />
   )
 }
