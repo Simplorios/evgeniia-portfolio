@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '/evgeniia-portfolio',
+  trailingSlash: true,
 }
 
 export default nextConfig
