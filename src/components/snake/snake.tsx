@@ -8,15 +8,12 @@ import styles from './snake.module.css'
 
 export const Snake = () => {
   return (
-    <div className={styles.container}>
-      <LottiePlayer
-        src="/evgeniia-portfolio/lottie/snake-d-to-u.json"
-        loop={false}
-        autoplay
-        renderConfig={{
-          autoResize: true,
-        }}
-      />
-    </div>
+    <LottiePlayer
+      path="/evgeniia-portfolio/lottie/snake-d-to-u.json"
+      renderer="svg"
+      loop={false}
+      autoplay={true}
+      className={styles.container}
+    />
   )
 }
