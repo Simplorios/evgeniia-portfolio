@@ -19,7 +19,7 @@ export default function AirProducts() {
         <h2 className="text-[3rem]/[1]">Instagram feed</h2>
         <Image
           className="mt-10"
-          src="/evgeniia-portfolio/air-products/feed.jpg"
+          src="/evgeniia-portfolio/air-products/feed.png"
           alt="Air Products feed"
           width={1160}
           height={3099}
