@@ -147,11 +147,26 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/gc-mockup.png',
+              src: '/evgeniia-portfolio/sibur-mockup.png',
             }}
           >
             <CardTitle color="white">Sibur — Mendeleev project</CardTitle>
             <CardTags tags={['landing page', 'promo']} />
+          </Card>
+        </ProjectsContainer>
+        <ProjectsContainer>
+          <Card
+            linkProps={{ href: '/projects/say-what' }}
+            imgProps={{
+              width: 1160,
+              height: 524,
+              src: '/evgeniia-portfolio/say-what-mockup.png',
+            }}
+          >
+            <CardTitle color="white" position="center">
+              Say What — sport store
+            </CardTitle>
+            <CardTags tags={['branding', 'identity']} position="center" />
           </Card>
         </ProjectsContainer>
       </div>
