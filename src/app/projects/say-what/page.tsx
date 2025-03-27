@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { ProjectHead } from '~/components/project-head'
+import { VideoPlayer } from '~/components/video-player/video-player'
 
 export default function Page() {
   return (
@@ -23,11 +24,8 @@ export default function Page() {
       <section className="mt-25 pb-35 mx-auto container">
         <h2 className="text-[3rem]/[1]">Result:</h2>
 
-        <Image
-          src="/evgeniia-portfolio/say-what/video.png"
-          alt="Say What video"
-          width={1160}
-          height={653}
+        <VideoPlayer
+          src="/evgeniia-portfolio/say-what/video.mp4"
           className="mt-10"
         />
 

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 import { ProjectHead } from '~/components/project-head'
+import { VideoPlayer } from '~/components/video-player'
 
 type SectionProps = React.HTMLAttributes<HTMLElement>
 
@@ -32,12 +33,10 @@ export default function ICJI() {
       />
       <section className="container mx-auto mt-25">
         <h2 className="text-5xl/[1]">Result:</h2>
-        <Image
+
+        <VideoPlayer
+          src="/evgeniia-portfolio/icji/video.mp4"
           className="mt-10"
-          src="/evgeniia-portfolio/icji-result.png"
-          alt="ICJI Result"
-          width={1215}
-          height={1039}
         />
       </section>
       <Section className="mt-5 grid grid-flow-col gap-x-14 gap-y-11.5 grid-cols-3 grid-rows-3">

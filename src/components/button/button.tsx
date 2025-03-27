@@ -12,6 +12,7 @@ const buttonVariants = cva(
         sm: 'h-10 px-6 font-bold',
         m: 'h-16 px-15 text-2xl font-bold rounded-lg',
         l: 'h-25 px-15 text-2xl rounded-lg',
+        icon: 'h-9 w-9',
       },
       color: {
         default: 'bg-primary hover:bg-primary/90',

@@ -2,7 +2,16 @@ import React from 'react'
 
 import Image from 'next/image'
 
+import { Reels } from '~/app/projects/air-products/reels'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '~/components/carousel'
 import { ProjectHead } from '~/components/project-head'
+import { VideoPlayer } from '~/components/video-player/video-player'
 
 export default function AirProducts() {
   return (
@@ -27,13 +36,8 @@ export default function AirProducts() {
       <section className="bg-primary-grey-background">
         <div className="mx-auto container pt-27.5 pb-29.75">
           <h2 className="text-[3rem]/[1]">Reels</h2>
-          <Image
-            className="mt-10 mx-auto"
-            src="/evgeniia-portfolio/air-products/reels.png"
-            alt="Air Products reels"
-            width={358}
-            height={633}
-          />
+
+          <Reels />
         </div>
       </section>
       <section className="mt-14 mx-auto container">
