@@ -30,7 +30,7 @@ export const ProjectHead: React.FC<ProjectHeadProps> = ({
           className="rounded-xl row-span-2"
         />
         <p className="text-[1.75rem]/[1]">{description}</p>
-        <div className="px-10 py-11 self-end rounded-xl bg-black">
+        <div className="px-10 py-11 self-end rounded-xl bg-primary">
           <p className="text-[1.75rem]/[1] text-primary-foreground">{task}</p>
         </div>
       </div>
