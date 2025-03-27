@@ -8,6 +8,10 @@ const buttonVariants = cva(
   "text-primary-foreground shadow-xs inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-[40] transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
   {
     variants: {
+      variant: {
+        outline:
+          'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
+      },
       size: {
         sm: 'h-10 px-6 font-bold',
         m: 'h-16 px-15 text-2xl font-bold rounded-lg',
@@ -34,6 +38,7 @@ type ButtonProps = React.ComponentProps<'button'> &
 export const Button: React.FC<ButtonProps> = ({
   children,
   className,
+  variant,
   size,
   color,
   asChild,
@@ -44,7 +49,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <Comp
       data-slot="button"
-      className={clsx(buttonVariants({ size, color, className }))}
+      className={clsx(buttonVariants({ size, color, variant, className }))}
       {...other}
     >
       {children}

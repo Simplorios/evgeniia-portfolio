@@ -5,10 +5,14 @@ import React, { RefObject, useEffect, useImperativeHandle, useRef } from 'react'
 import clsx from 'clsx'
 
 export type VideoPlayerRef = {
-  video: RefObject<HTMLVideoElement>
-  player: RefObject<shaka.Player>
+  video: RefObject<HTMLVideoElement | null>
+  player: RefObject<shaka.Player | null>
 }
-export type VideoPlayerProps = Omit<React.ComponentProps<'video'>, 'ref'> & {
+export type VideoPlayerProps = Omit<
+  React.ComponentProps<'video'>,
+  'ref' | 'src'
+> & {
+  src: string
   ref?: React.Ref<VideoPlayerRef>
 }
 
@@ -18,10 +22,10 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   className,
   poster,
 }) => {
-  const videoRef = useRef<HTMLVideoElement>()
-  const playerRef = useRef<shaka.Player>()
+  const videoRef = useRef<HTMLVideoElement | null>(null)
+  const playerRef = useRef<shaka.Player | null>(null)
 
-  useImperativeHandle<VideoPlayerRef>(
+  useImperativeHandle<VideoPlayerRef, VideoPlayerRef>(
     ref,
     () => ({
       video: videoRef,
@@ -32,13 +36,13 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   useEffect(() => {
     const init = async () => {
-      const shaka = await import('shaka-player')
-      // @ts-ignore
+      //@ts-expect-error Can't resolve types https://github.com/shaka-project/shaka-player/issues/6442
+      const shaka = await import('shaka-player/dist/shaka-player.compiled')
+
       playerRef.current = new shaka.Player(videoRef.current)
 
-      // @ts-ignore
       shaka.polyfill.installAll()
-      playerRef.current.load(src).catch(console.error)
+      playerRef.current?.load(src).catch(console.error)
     }
 
     init()

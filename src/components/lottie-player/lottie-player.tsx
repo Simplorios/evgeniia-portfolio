@@ -12,7 +12,6 @@ export type LottiePlayerProps<T extends RendererType = 'svg'> = Omit<
 
 export const LottiePlayer: React.FC<LottiePlayerProps> = ({
   path,
-  part,
   loop,
   name,
   autoplay,
@@ -22,7 +21,7 @@ export const LottiePlayer: React.FC<LottiePlayerProps> = ({
   renderer,
   ...props
 }) => {
-  const [containerRef, setContainerRef] = useState<HTMLDivElement>()
+  const [containerRef, setContainerRef] = useState<HTMLDivElement | null>()
 
   useEffect(() => {
     if (!containerRef) return

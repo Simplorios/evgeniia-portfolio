@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react'
 
-import { EmblaCarouselType } from 'embla-carousel/components/EmblaCarousel'
+import { EmblaCarouselType } from 'embla-carousel'
 
 import {
   Carousel,

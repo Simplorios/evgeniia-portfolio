@@ -3,15 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { Reels } from '~/app/projects/air-products/reels'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '~/components/carousel'
 import { ProjectHead } from '~/components/project-head'
-import { VideoPlayer } from '~/components/video-player/video-player'
 
 export default function AirProducts() {
   return (
