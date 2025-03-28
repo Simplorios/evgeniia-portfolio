@@ -9,7 +9,13 @@ export default function AirProducts() {
   return (
     <>
       <ProjectHead
-        title="Air Products social media"
+        title={
+          <>
+            Air Products
+            <br />
+            social media
+          </>
+        }
         imgSrc="/evgeniia-portfolio/air-products/head.png"
         imgAlt="Air Products head"
         task="Task: to create social networks style based on the main brand book, and to lead further all visual components of the brand"

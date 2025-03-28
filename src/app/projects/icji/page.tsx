@@ -25,7 +25,13 @@ export default function ICJI() {
   return (
     <>
       <ProjectHead
-        title="Identity for The International Center for Joint Initiatives"
+        title={
+          <>
+            Identity for The International
+            <br />
+            Center for Joint Initiatives
+          </>
+        }
         description="ICJI is a platform fostering economic and business collaboration between Russia and its global partners"
         task="Task: to develop a visual identity for the partnership initiative of ICJI with China, creating a holistic and effective brand image for the project"
         imgSrc="/evgeniia-portfolio/icji-identity-mockup.png"

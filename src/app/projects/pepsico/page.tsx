@@ -9,7 +9,13 @@ export default function PepsiCo() {
   return (
     <>
       <ProjectHead
-        title="Web Game for PepsiCo Internship Recruitment"
+        title={
+          <>
+            Web Game for PepsiCo
+            <br />
+            Internship Recruitment
+          </>
+        }
         imgSrc="/evgeniia-portfolio/pepsico/head.png"
         imgAlt="Pepsi head"
         task="To design a web game in line with PepsiCo’s visual identity, develop illustrations, and create animations for further implementation"

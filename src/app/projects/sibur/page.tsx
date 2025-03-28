@@ -9,7 +9,13 @@ export default function Sibur() {
   return (
     <>
       <ProjectHead
-        title="Promo materials for Sibur employer brand"
+        title={
+          <>
+            Promo materials for Sibur
+            <br />
+            employer brand
+          </>
+        }
         imgSrc="/evgeniia-portfolio/sibur/head.png"
         imgAlt="Sibur head"
         task="Task: to create an identity for Sibur strong employer brand and make it recognizable with catchy promo materials"
