@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { ProjectHead } from '~/components/project-head'
+import { VideoLoop } from '~/components/video-loop'
 import { VideoPlayer } from '~/components/video-player/video-player'
 
 export default function Page() {
@@ -25,7 +26,8 @@ export default function Page() {
         <h2 className="text-[3rem]/[1]">Result:</h2>
 
         <VideoPlayer
-          src="/evgeniia-portfolio/say-what/video.mp4"
+          src="/evgeniia-portfolio/say-what/video-1.mp4"
+          poster="/evgeniia-portfolio/say-what/video-1.jpg"
           className="mt-10"
         />
 
@@ -42,12 +44,7 @@ export default function Page() {
           width={1160}
           height={947}
         />
-        <Image
-          src="/evgeniia-portfolio/say-what/result-3.png"
-          alt="Say What result 3"
-          width={1160}
-          height={653}
-        />
+        <VideoLoop src="/evgeniia-portfolio/say-what/video-2.mp4" />
         <Image
           src="/evgeniia-portfolio/say-what/result-4.png"
           alt="Say What result 4"

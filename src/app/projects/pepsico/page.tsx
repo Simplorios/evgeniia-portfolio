@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { ProjectHead } from '~/components/project-head'
+import { VideoPlayer } from '~/components/video-player'
 
 export default function PepsiCo() {
   return (
@@ -16,12 +17,10 @@ export default function PepsiCo() {
       />
       <section className="mt-25 mx-auto container">
         <h2 className="text-[3rem]/[1]">Result:</h2>
-        <Image
+        <VideoPlayer
+          src="/evgeniia-portfolio/pepsico/video.mp4"
+          poster="/evgeniia-portfolio/pepsico/video.jpg"
           className="mt-10 mx-auto"
-          src="/evgeniia-portfolio/pepsico/result.png"
-          alt="Pepsico result"
-          width={1160}
-          height={653}
         />
       </section>
 
