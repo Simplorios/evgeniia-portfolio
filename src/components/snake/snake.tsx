@@ -11,7 +11,7 @@ export const Snake = () => {
     <LottiePlayer
       path="/evgeniia-portfolio/lottie/snake-d-to-u.json"
       renderer="svg"
-      loop={false}
+      loop={true}
       autoplay={true}
       className={styles.container}
     />
