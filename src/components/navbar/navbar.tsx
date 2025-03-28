@@ -21,13 +21,13 @@ export const Navbar = () => {
         <nav className="flex flex-col justify-center">
           <ul className="inline-grid grid-flow-col auto-rows-min gap-17">
             <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
               <Link href="/#about">About</Link>
             </li>
             <li>
               <Link href="/#projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="#">Process</Link>
             </li>
           </ul>
         </nav>
