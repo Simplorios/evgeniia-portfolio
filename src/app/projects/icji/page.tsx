@@ -42,7 +42,7 @@ export default function ICJI() {
 
         <VideoLoop
           src="/evgeniia-portfolio/icji/video.mp4"
-          className="mt-10 aspect-[1.17]"
+          className="mt-10 mx-auto aspect-[1.16] max-h-[90dvh]"
         />
       </section>
       <Section className="mt-5 grid grid-flow-col gap-x-14 gap-y-11.5 grid-cols-3 grid-rows-3">
