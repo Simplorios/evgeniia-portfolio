@@ -2,6 +2,7 @@ import React from 'react'
 
 import Image from 'next/image'
 
+import { Button } from '~/components/button'
 import { ProjectHead } from '~/components/project-head'
 
 export default function Sibur() {
@@ -35,6 +36,15 @@ export default function Sibur() {
             width={1160}
             height={652.5}
           />
+          <Button size="l" asChild={true}>
+            <a
+              href="https://makeloveagency.com/ru/cases/sibur_mendeleev"
+              rel="noopener,noreferrer"
+              target="_blank"
+            >
+              See result
+            </a>
+          </Button>
         </div>
       </section>
     </>

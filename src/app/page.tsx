@@ -1,3 +1,6 @@
+import React from 'react'
+
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Button } from '~/components/button'
@@ -7,6 +10,37 @@ import { Snake } from '~/components/snake'
 import { Tag } from '~/components/tag'
 
 import styles from './page.module.css'
+
+const LetsDiscuss = () => {
+  return (
+    <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background flex flex-col">
+      <div className="grid justify-between grid-flow-col items-start">
+        <h5 className="text-[2.625rem]/[1]">
+          Let&apos;s discuss
+          <br />
+          your project
+        </h5>
+        <Tag>10-15 min</Tag>
+      </div>
+      <p className="mt-7.5 text-lg text-primary-grey grow">
+        Let&apos;s figure out the task,
+        <br />
+        fill out a small brief together
+        <br />
+        and schedule a call
+      </p>
+      <Button size="l" className="mt-7.5 w-full" asChild={true}>
+        <a
+          href="https://t.me/janeeremeeva"
+          rel="noopener,noreferrer"
+          target="_blank"
+        >
+          Telegram →
+        </a>
+      </Button>
+    </div>
+  )
+}
 
 export default function Home() {
   return (
@@ -26,7 +60,7 @@ export default function Home() {
         </div>
         <Snake />
       </section>
-      <div className="container mx-auto">
+      <div className="container mx-auto pb-35">
         <ProjectsContainer id="projects">
           <Card
             linkProps={{ href: '/projects/uber' }}
@@ -104,26 +138,7 @@ export default function Home() {
                 and AI in my designs
               </p>
             </div>
-            <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background flex flex-col">
-              <div className="grid justify-between grid-flow-col items-start">
-                <h5 className="text-[2.625rem]/[1]">
-                  Let&apos;s discuss
-                  <br />
-                  your project
-                </h5>
-                <Tag>10-15 min</Tag>
-              </div>
-              <p className="mt-7.5 text-lg text-primary-grey grow">
-                Let&apos;s figure out the task,
-                <br />
-                fill out a small brief together
-                <br />
-                and schedule a call
-              </p>
-              <Button size="l" className="mt-7.5 w-full">
-                Telegram →
-              </Button>
-            </div>
+            <LetsDiscuss />
           </div>
         </section>
         <ProjectsContainer>
@@ -169,6 +184,18 @@ export default function Home() {
             <CardTags tags={['branding', 'identity']} position="center" />
           </Card>
         </ProjectsContainer>
+
+        <section className="mt-21 grid grid-flow-col auto-cols-fr gap-10">
+          <div className="rounded-xl bg-primary-grey-background flex justify-center items-center">
+            <Image
+              src="/evgeniia-portfolio/logo.svg"
+              alt="Logo bottom"
+              width={134}
+              height={185}
+            />
+          </div>
+          <LetsDiscuss />
+        </section>
       </div>
     </>
   )

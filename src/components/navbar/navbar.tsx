@@ -31,7 +31,15 @@ export const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <Button>Contact</Button>
+        <Button asChild={true}>
+          <a
+            href="https://t.me/janeeremeeva"
+            rel="noopener,noreferrer"
+            target="_blank"
+          >
+            Contact
+          </a>
+        </Button>
       </div>
     </header>
   )
