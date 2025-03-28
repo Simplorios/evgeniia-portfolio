@@ -40,10 +40,12 @@ export default function ICJI() {
       <section className="container mx-auto mt-25">
         <h2 className="text-5xl/[1]">Result:</h2>
 
-        <VideoLoop
-          src="/evgeniia-portfolio/icji/video.mp4"
-          className="mt-10 mx-auto aspect-[1.16] max-h-[90dvh]"
-        />
+        <div className="mt-10 mx-auto aspect-[1.16] max-h-[90dvh] max-h-[90dvh]">
+          <VideoLoop
+            src="/evgeniia-portfolio/icji/video.mp4"
+            className="w-full h-full"
+          />
+        </div>
       </section>
       <Section className="mt-5 grid grid-flow-col gap-x-14 gap-y-11.5 grid-cols-3 grid-rows-3">
         <h2 className="text-5xl/[1]">Inspiration</h2>
