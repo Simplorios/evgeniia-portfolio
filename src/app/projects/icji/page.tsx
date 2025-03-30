@@ -7,9 +7,12 @@ import clsx from 'clsx'
 import { ProjectHead } from '~/components/project-head'
 import { VideoLoop } from '~/components/video-loop'
 
-type SectionProps = React.HTMLAttributes<HTMLElement>
+const BASE_PATH = '/evgeniia-portfolio/icji/'
 
-const Section: React.FC<SectionProps> = ({ className, ...props }) => {
+const Section: React.FC<React.ComponentProps<'section'>> = ({
+  className,
+  ...props
+}) => {
   return (
     <section
       className={clsx(
@@ -34,17 +37,14 @@ export default function ICJI() {
         }
         description="ICJI is a platform fostering economic and business collaboration between Russia and its global partners"
         task="Task: to develop a visual identity for the partnership initiative of ICJI with China, creating a holistic and effective brand image for the project"
-        imgSrc="/evgeniia-portfolio/icji-identity-mockup.png"
+        imgSrc={`${BASE_PATH}head.png`}
         imgAlt="ICJI"
       />
       <section className="container mx-auto mt-25">
         <h2 className="text-5xl/[1]">Result:</h2>
 
         <div className="mt-10 mx-auto aspect-[1.16] max-h-[90dvh] max-h-[90dvh]">
-          <VideoLoop
-            src="/evgeniia-portfolio/icji/video.mp4"
-            className="w-full h-full"
-          />
+          <VideoLoop src={`${BASE_PATH}video.mp4`} className="w-full h-full" />
         </div>
       </section>
       <Section className="mt-5 grid grid-flow-col gap-x-14 gap-y-11.5 grid-cols-3 grid-rows-3">
@@ -57,13 +57,13 @@ export default function ICJI() {
 
         <div className="grid grid-cols-2 gap-x-14 items-center">
           <Image
-            src="/evgeniia-portfolio/icji/result/icji-in-1.png"
+            src={`${BASE_PATH}result/1.png`}
             alt="Inspiration 1"
             width={187.67}
             height={187.67}
           />
           <Image
-            src="/evgeniia-portfolio/icji/arrow.svg"
+            src={`${BASE_PATH}arrow.svg`}
             alt="Arrow"
             width={56.85}
             height={24.47}
@@ -71,13 +71,13 @@ export default function ICJI() {
         </div>
         <div className="grid grid-cols-2 gap-x-14 items-center">
           <Image
-            src="/evgeniia-portfolio/icji/result/icji-in-2.png"
+            src={`${BASE_PATH}result/2.png`}
             alt="Inspiration 2"
             width={187.67}
             height={187.67}
           />
           <Image
-            src="/evgeniia-portfolio/icji/arrow.svg"
+            src={`${BASE_PATH}arrow.svg`}
             alt="Arrow"
             width={56.85}
             height={24.47}
@@ -85,13 +85,13 @@ export default function ICJI() {
         </div>
         <div className="grid grid-cols-2 gap-x-14 items-center">
           <Image
-            src="/evgeniia-portfolio/icji/result/icji-in-3.png"
+            src={`${BASE_PATH}result/3.png`}
             alt="Inspiration 3"
             width={187.67}
             height={187.67}
           />
           <Image
-            src="/evgeniia-portfolio/icji/arrow.svg"
+            src={`${BASE_PATH}arrow.svg`}
             alt="Arrow"
             width={56.85}
             height={24.47}
@@ -99,7 +99,7 @@ export default function ICJI() {
         </div>
         <Image
           className="row-span-3"
-          src="/evgeniia-portfolio/icji/result/icji-in-result.png"
+          src={`${BASE_PATH}result/result.png`}
           alt="Inspiration result"
           width={369}
           height={699}
@@ -119,33 +119,33 @@ export default function ICJI() {
           </p>
           <div className="grid grid-flow-col items-center gap-x-6">
             <Image
-              src="/evgeniia-portfolio/icji/transform/icji-transform-1.png"
+              src={`${BASE_PATH}transform/1.png`}
               alt="Transform 1"
               width={157}
               height={157}
             />
             <Image
-              src="/evgeniia-portfolio/icji/arrow.svg"
+              src={`${BASE_PATH}arrow.svg`}
               alt="Arrow"
               width={49.5}
               height={21.3}
             />
 
             <Image
-              src="/evgeniia-portfolio/icji/transform/icji-transform-2.png"
+              src={`${BASE_PATH}transform/2.png`}
               alt="Transform 2"
               width={157}
               height={157}
             />
             <Image
-              src="/evgeniia-portfolio/icji/arrow.svg"
+              src={`${BASE_PATH}arrow.svg`}
               alt="Arrow"
               width={49.5}
               height={21.3}
             />
 
             <Image
-              src="/evgeniia-portfolio/icji/result/icji-in-result.png"
+              src={`${BASE_PATH}result/result.png`}
               alt="Transform result"
               width={157}
               height={298}
@@ -153,15 +153,20 @@ export default function ICJI() {
           </div>
         </div>
       </Section>
-      <Section>
+      <Section className="flex justify-between">
         <h2 className="text-5xl/[1]">Logo</h2>
-        <div></div>
+        <Image
+          src={`${BASE_PATH}logo.png`}
+          alt="icji logo"
+          width={780}
+          height={535}
+        />
       </Section>
       <Section className="grid grid-cols-2 grid-rows-3">
         <h2 className="text-5xl/[1]">Typefaces</h2>
         <Image
           className="row-span-3"
-          src="/evgeniia-portfolio/icji/typefaces/font.png"
+          src={`${BASE_PATH}typefaces/font.png`}
           alt="Font"
           width={780}
           height={498}
@@ -171,7 +176,7 @@ export default function ICJI() {
       <Section className="grid grid-cols-2 justify-between gap-y-22">
         <h2 className="text-5xl/[1]">Business card</h2>
         <Image
-          src="/evgeniia-portfolio/icji/products/business-card.png"
+          src={`${BASE_PATH}products/business-card.png`}
           alt="Business card"
           width={693}
           height={462}
@@ -179,7 +184,7 @@ export default function ICJI() {
 
         <h2 className="text-5xl/[1]">Envelope</h2>
         <Image
-          src="/evgeniia-portfolio/icji/products/envelope.png"
+          src={`${BASE_PATH}products/envelope.png`}
           alt="Envelope"
           width={693}
           height={462}
@@ -187,7 +192,7 @@ export default function ICJI() {
 
         <h2 className="text-5xl/[1]">Tote bags</h2>
         <Image
-          src="/evgeniia-portfolio/icji/products/bag.png"
+          src={`${BASE_PATH}products/bag.png`}
           alt="Tote bags"
           width={693}
           height={616}
@@ -195,7 +200,7 @@ export default function ICJI() {
 
         <h2 className="text-5xl/[1]">Box</h2>
         <Image
-          src="/evgeniia-portfolio/icji/products/box.png"
+          src={`${BASE_PATH}products/box.png`}
           alt="Box"
           width={693}
           height={597}
@@ -205,19 +210,19 @@ export default function ICJI() {
         <h2 className="text-5xl/[1]">Tote bags</h2>
         <div className="mt-20 grid grid-cols-3 justify-between">
           <Image
-            src="/evgeniia-portfolio/icji/smm/1.png"
+            src={`${BASE_PATH}smm/1.png`}
             alt="SMM 1"
             width={348}
             height={598}
           />
           <Image
-            src="/evgeniia-portfolio/icji/smm/2.png"
+            src={`${BASE_PATH}smm/2.png`}
             alt="SMM 2"
             width={348}
             height={598}
           />
           <Image
-            src="/evgeniia-portfolio/icji/smm/3.png"
+            src={`${BASE_PATH}smm/3.png`}
             alt="SMM 3"
             width={348}
             height={598}
