@@ -6,6 +6,8 @@ import { ProjectHead } from '~/components/project-head'
 import { VideoLoop } from '~/components/video-loop'
 import { VideoPlayer } from '~/components/video-player/video-player'
 
+const BASE_PATH = '/evgeniia-portfolio/say-what/'
+
 export default function Page() {
   return (
     <>
@@ -17,7 +19,7 @@ export default function Page() {
             for sports store
           </>
         }
-        imgSrc="/evgeniia-portfolio/say-what/head.png"
+        imgSrc={`${BASE_PATH}head.png`}
         imgAlt="Say What head"
         task="Task: to create an Instagram page based on the main brand book, while expressing the authenticity and spirit of the city of Tbilisi"
         description="Development of Instagram feed for launching Uber Black in Tbilisi, as part of work at “Social Animals” agency team"
@@ -26,33 +28,33 @@ export default function Page() {
         <h2 className="text-[3rem]/[1]">Result:</h2>
 
         <VideoPlayer
-          src="/evgeniia-portfolio/say-what/video-1.mp4"
-          poster="/evgeniia-portfolio/say-what/video-1.jpg"
+          src={`${BASE_PATH}video-1.mp4`}
+          poster={`${BASE_PATH}video-1.jpg`}
           className="mt-10"
         />
 
         <Image
-          src="/evgeniia-portfolio/say-what/result-1.png"
+          src={`${BASE_PATH}result-1.png`}
           alt="Say What result 1"
           width={1160}
           height={653}
           className="mt-10"
         />
         <Image
-          src="/evgeniia-portfolio/say-what/result-2.png"
+          src={`${BASE_PATH}result-2.png`}
           alt="Say What result 2"
           width={1160}
           height={947}
         />
-        <VideoLoop src="/evgeniia-portfolio/say-what/video-2.mp4" />
+        <VideoLoop src={`${BASE_PATH}video-2.mp4`} />
         <Image
-          src="/evgeniia-portfolio/say-what/result-4.png"
+          src={`${BASE_PATH}result-4.png`}
           alt="Say What result 4"
           width={1160}
           height={519}
         />
         <Image
-          src="/evgeniia-portfolio/say-what/result-5.png"
+          src={`${BASE_PATH}result-5.png`}
           alt="Say What result 5"
           width={1160}
           height={988}
