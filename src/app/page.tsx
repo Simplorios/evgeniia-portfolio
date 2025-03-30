@@ -11,6 +11,8 @@ import { Tag } from '~/components/tag'
 
 import styles from './page.module.css'
 
+const BASE_PATH = '/evgeniia-portfolio/main/'
+
 const LetsDiscuss = () => {
   return (
     <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background flex flex-col">
@@ -67,7 +69,7 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/uber-mockup.png',
+              src: `${BASE_PATH}uber.png`,
             }}
           >
             <CardTitle color="white">Uber Georgia</CardTitle>
@@ -78,7 +80,7 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/icji-identity-mockup.png',
+              src: `${BASE_PATH}icji.png`,
             }}
           >
             <CardTitle>ICJI identity</CardTitle>
@@ -91,7 +93,7 @@ export default function Home() {
             imgProps={{
               width: 1160,
               height: 524,
-              src: '/evgeniia-portfolio/pepsico-mockup.png',
+              src: `${BASE_PATH}pepsico.png`,
             }}
           >
             <CardTitle color="white" position="center">
@@ -147,7 +149,7 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/gc-mockup.png',
+              src: `${BASE_PATH}gc.png`,
             }}
           >
             <CardTitle>
@@ -162,7 +164,7 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/sibur-mockup.png',
+              src: `${BASE_PATH}sibur.png`,
             }}
           >
             <CardTitle color="white">Sibur — Mendeleev project</CardTitle>
@@ -175,7 +177,7 @@ export default function Home() {
             imgProps={{
               width: 1160,
               height: 524,
-              src: '/evgeniia-portfolio/say-what-mockup.png',
+              src: `${BASE_PATH}say-what.png`,
             }}
           >
             <CardTitle color="white" position="center">
@@ -190,7 +192,7 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/wedding-mockup.png',
+              src: `${BASE_PATH}wedding.png`,
             }}
           >
             <CardTitle>
@@ -205,7 +207,7 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: '/evgeniia-portfolio/bonduelle-mockup.png',
+              src: `${BASE_PATH}bonduelle.png`,
             }}
           >
             <CardTitle color="white">Bonduelle</CardTitle>
