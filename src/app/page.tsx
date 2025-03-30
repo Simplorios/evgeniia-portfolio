@@ -184,6 +184,34 @@ export default function Home() {
             <CardTags tags={['branding', 'identity']} position="center" />
           </Card>
         </ProjectsContainer>
+        <ProjectsContainer>
+          <Card
+            linkProps={{ href: '/projects/wedding' }}
+            imgProps={{
+              width: 559,
+              height: 524,
+              src: '/evgeniia-portfolio/wedding-mockup.png',
+            }}
+          >
+            <CardTitle>
+              Wedding
+              <br />
+              polygrathy
+            </CardTitle>
+            <CardTags tags={['printing']} />
+          </Card>
+          <Card
+            linkProps={{ href: '/projects/bonduelle' }}
+            imgProps={{
+              width: 559,
+              height: 524,
+              src: '/evgeniia-portfolio/bonduelle-mockup.png',
+            }}
+          >
+            <CardTitle color="white">Bonduelle</CardTitle>
+            <CardTags tags={['brand materials']} />
+          </Card>
+        </ProjectsContainer>
 
         <section className="mt-21 grid grid-flow-col auto-cols-fr gap-10">
           <div className="rounded-xl bg-primary-grey-background flex justify-center items-center">
