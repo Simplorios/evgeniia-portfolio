@@ -32,7 +32,7 @@ function getBackgroundImage(src?: string, srcSet?: string) {
   return ''
 }
 
-const titleVariants = cva('text-[2.625rem]/[0.86]', {
+const titleVariants = cva('text-[2rem]/[0.86] md:text-[2.625rem]/[0.86]', {
   variants: {
     color: {
       default: 'text-primary',
@@ -93,7 +93,7 @@ export const Card: React.FC<CardProps> = ({
 
   return (
     <Link
-      className={`h-131 px-7.5 py-6 rounded-xl bg-no-repeat bg-cover bg-center transition duration-100 ease-in-out hover:scale-102`}
+      className={`h-80 md:h-131 px-4 md:px-7.5 py-4 md:py-6 rounded-xl bg-no-repeat bg-cover bg-center transition duration-100 ease-in-out hover:scale-102`}
       style={{ backgroundImage }}
       href={linkProps.href}
     >

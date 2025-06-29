@@ -2,6 +2,10 @@
   "name": "evgeniia-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "23.x",
+    "npm": "please-use-yarn"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

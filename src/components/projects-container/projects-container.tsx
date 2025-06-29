@@ -10,7 +10,10 @@ export const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
 }) => {
   return (
     <section
-      className={clsx('py-5 grid grid-flow-col auto-cols-fr gap-10', className)}
+      className={clsx(
+        'py-5 grid grid-cols-1 md:grid-flow-col md:auto-cols-fr gap-10',
+        className,
+      )}
       {...props}
     />
   )

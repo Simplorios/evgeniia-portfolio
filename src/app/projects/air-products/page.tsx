@@ -40,9 +40,9 @@ export default function AirProducts() {
           <Reels />
         </div>
       </section>
-      <section className="mt-14 mx-auto container">
-        <h2 className="text-[3rem]/[1]">Reels</h2>
-        <div className="mt-10 pb-35 grid grid-cols-4 grid-rows-2 gap-x-2 gap-y-10 justify-between">
+      <section className="mt-14 mx-auto container px-4 md:px-0">
+        <h2 className="text-[3rem]/[1]">Posts</h2>
+        <div className="mt-10 pb-35 grid grid-cols-2 md:grid-cols-4 grid-rows-4 md:grid-rows-2 gap-2 md:gap-x-2 md:gap-y-10">
           <Image
             src={`${BASE_PATH}post-1.png`}
             alt="Air Products post 1"

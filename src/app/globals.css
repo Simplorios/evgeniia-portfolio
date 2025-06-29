@@ -23,6 +23,10 @@
 
   --shadow-header: 0px 1px 3px 0px #0000001a;
 
+  --breakpoint-xs: 20rem;
+  --breakpoint-sm: 24rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
   --breakpoint-xl: 72.5rem;
   --breakpoint-2xl: initial;
 }
@@ -39,4 +43,15 @@ body {
   line-height: var(--text-base--line-height);
 
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure all elements inherit Arial by default */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Allow custom font to override for specific elements */
+.font-nimpkish,
+[class*='font-(family-name:--font-nimpkish)'] {
+  font-family: var(--font-nimpkish), Arial, Helvetica, sans-serif !important;
 }
