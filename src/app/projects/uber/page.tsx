@@ -25,48 +25,52 @@ export default function Uber() {
         imgAlt="Uber"
       />
 
-      <section className="container mx-auto mt-25">
-        <h2 className="text-5xl/[1]">Instagram feed</h2>
-        <Image
-          className="mt-10"
-          src={`${BASE_PATH}feed.png`}
-          alt="Uber Feed"
-          width={1160}
-          height={4204.74}
-        />
+      <section className="mt-25">
+        <div className="container mx-auto px-4 md:px-0">
+          <h2 className="text-3xl/[1] md:text-5xl/[1]">Instagram feed</h2>
+        </div>
+        <div className="mt-10 md:container md:mx-auto md:px-0">
+          <Image
+            className="w-full"
+            src={`${BASE_PATH}feed.png`}
+            alt="Uber Feed"
+            width={1160}
+            height={4204.74}
+          />
+        </div>
       </section>
 
-      <section className="pt-27.5 pb-31.5 bg-primary-grey-background">
-        <div className="container mx-auto">
-          <h2 className="text-5xl/[1]">3D forms</h2>
-          <div className="mt-7.5 grid grid-cols-3 grid-rows-2 gap-5">
+      <section className="pt-16 pb-20 md:pt-27.5 md:pb-31.5 bg-primary-grey-background">
+        <div className="container mx-auto px-4 md:px-0">
+          <h2 className="text-3xl/[1] md:text-5xl/[1]">3D forms</h2>
+          <div className="mt-7.5 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
             <Image
-              className="col-1 row-1"
               src={`${BASE_PATH}3d-forms-1.png`}
               alt="3d froms 1"
               width={374}
               height={374}
+              className="w-full h-auto"
             />
             <Image
-              className="col-1 row-2"
               src={`${BASE_PATH}3d-forms-2.png`}
               alt="3d froms 2"
               width={374}
               height={374}
+              className="w-full h-auto"
             />
             <Image
-              className="col-2 row-2"
               src={`${BASE_PATH}3d-forms-3.png`}
               alt="3d froms 3"
               width={374}
               height={374}
+              className="w-full h-auto"
             />
             <Image
-              className="col-3 row-2"
               src={`${BASE_PATH}3d-forms-4.png`}
               alt="3d froms 4"
               width={374}
               height={374}
+              className="w-full h-auto"
             />
           </div>
         </div>

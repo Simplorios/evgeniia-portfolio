@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={`${edNimpkish.variable} antialiased`}>
         <Navbar />
         <main className="overflow-x-hidden">{children}</main>
-        <footer className="bg-primary h-32.5 flex justify-center items-center">
+        <footer className="bg-primary h-32.5 flex justify-center items-center px-4 md:px-0">
           <Button size="m" color="graphite">
             <Link href="/">Return to main page</Link>
           </Button>

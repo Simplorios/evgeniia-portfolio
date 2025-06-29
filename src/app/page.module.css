@@ -6,9 +6,9 @@
   content: attr(data-letter-above);
   position: absolute;
 
-  top: -2.625rem;
-  left: -30%;
+  top: -2.2rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg) scaleX(-1);
 
-  @apply text-[2.2rem] font-(family-name:--font-nimpkish);
-  transform: rotate(180deg) scaleX(-1);
+  @apply text-[1.8rem] font-(family-name:--font-nimpkish);
 }

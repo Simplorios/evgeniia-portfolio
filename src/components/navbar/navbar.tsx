@@ -8,7 +8,7 @@ import { Button } from '~/components/button'
 export const Navbar = () => {
   return (
     <header className="shadow-header">
-      <div className="h-[99] container mx-auto flex justify-between items-center">
+      <div className="h-[99] container mx-auto flex justify-between items-center px-4 md:px-0">
         <Link href="/">
           <Image
             src="/evgeniia-portfolio/logo.svg"
@@ -18,7 +18,7 @@ export const Navbar = () => {
           />
         </Link>
 
-        <nav className="flex flex-col justify-center">
+        <nav className="hidden md:flex flex-col justify-center">
           <ul className="inline-grid grid-flow-col auto-rows-min gap-17">
             <li>
               <Link href="/">Home</Link>

@@ -17,7 +17,7 @@ const LetsDiscuss = () => {
   return (
     <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background flex flex-col">
       <div className="grid justify-between grid-flow-col items-start">
-        <h5 className="text-[2.625rem]/[1]">
+        <h5 className="text-[1.75rem]/[1] md:text-[2.625rem]/[1]">
           Let&apos;s discuss
           <br />
           your project
@@ -31,7 +31,7 @@ const LetsDiscuss = () => {
         <br />
         and schedule a call
       </p>
-      <Button size="l" className="mt-7.5 w-full" asChild={true}>
+      <Button size="m" className="mt-7.5 w-full" asChild={true}>
         <a
           href="https://t.me/janeeremeeva"
           rel="noopener,noreferrer"
@@ -47,9 +47,9 @@ const LetsDiscuss = () => {
 export default function Home() {
   return (
     <>
-      <section className="relative h-dvh mb-25">
-        <div className="pt-[160px] container mx-auto">
-          <h1 className="text-[5.375rem]/[1.02] font-(family-name:--font-nimpkish)">
+      <section className="relative h-dvh mb-10 md:mb-25">
+        <div className="pt-[80px] md:pt-[160px] px-4 md:px-0 container mx-auto">
+          <h1 className="text-[4rem]/[1.02] md:text-[5.375rem]/[1.02] font-(family-name:--font-nimpkish)">
             dEsign that
             <br />
             aMplifiEs
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         <Snake />
       </section>
-      <div className="container mx-auto pb-35">
+      <div className="container mx-auto pb-35 px-4 md:px-0">
         <ProjectsContainer id="projects">
           <Card
             linkProps={{ href: '/projects/uber' }}
@@ -73,7 +73,7 @@ export default function Home() {
             }}
           >
             <CardTitle color="white">Uber Georgia</CardTitle>
-            <CardTags tags={['social media', 'AI']} />
+            <CardTags tags={['social media']} />
           </Card>
           <Card
             linkProps={{ href: '/projects/icji' }}
@@ -93,7 +93,7 @@ export default function Home() {
             imgProps={{
               width: 1160,
               height: 524,
-              src: `${BASE_PATH}pepsico.png`,
+              src: `/evgeniia-portfolio/pepsico/head.png`,
             }}
           >
             <CardTitle color="white" position="center">
@@ -106,12 +106,12 @@ export default function Home() {
           </Card>
         </ProjectsContainer>
         <section id="about" className="pt-10 pb-20">
-          <p className="text-[5.375rem]/[1.37] text-center font-(family-name:--font-nimpkish)">
+          <p className="text-[3rem]/[1.37] md:text-[5.375rem]/[1.37] text-center font-(family-name:--font-nimpkish)">
             hello!
           </p>
-          <div className="mt-16 grid grid-flow-col grid-cols-2 gap-10">
+          <div className="mt-16 grid grid-cols-1 md:grid-flow-col md:grid-cols-2 gap-10">
             <div className="pt-8.5 px-7.5 pb-7.5 rounded-xl bg-primary-grey-background">
-              <h5 className="text-[2.625rem]">
+              <h5 className="text-[2rem] md:text-[2.625rem]">
                 I’m Evgen
                 <span
                   className={styles['letter-above']}
@@ -128,7 +128,7 @@ export default function Home() {
               <p className="mt-4 text-lg text-primary-grey">
                 I develop complex identities,
                 <br />
-                social networks design, presintations
+                social networks design, presintations,
                 <br />
                 trendy print materials, and websites
               </p>
@@ -157,7 +157,7 @@ export default function Home() {
               <br />
               gas company
             </CardTitle>
-            <CardTags tags={['social media', 'brand materials']} />
+            <CardTags tags={['social media']} />
           </Card>
           <Card
             linkProps={{ href: '/projects/sibur' }}
@@ -177,7 +177,7 @@ export default function Home() {
             imgProps={{
               width: 1160,
               height: 524,
-              src: `${BASE_PATH}say-what.png`,
+              src: `/evgeniia-portfolio/say-what/head.png`,
             }}
           >
             <CardTitle color="white" position="center">
@@ -192,10 +192,10 @@ export default function Home() {
             imgProps={{
               width: 559,
               height: 524,
-              src: `${BASE_PATH}wedding.png`,
+              src: `/evgeniia-portfolio/wedding/wedding-card.png`,
             }}
           >
-            <CardTitle>
+            <CardTitle color="white">
               Wedding
               <br />
               polygrathy
@@ -215,8 +215,8 @@ export default function Home() {
           </Card>
         </ProjectsContainer>
 
-        <section className="mt-21 grid grid-flow-col auto-cols-fr gap-10">
-          <div className="rounded-xl bg-primary-grey-background flex justify-center items-center">
+        <section className="mt-21 grid grid-cols-1 md:grid-flow-col md:auto-cols-fr gap-10">
+          <div className="rounded-xl bg-primary-grey-background flex justify-center items-center py-16 md:py-20">
             <Image
               src="/evgeniia-portfolio/logo.svg"
               alt="Logo bottom"
