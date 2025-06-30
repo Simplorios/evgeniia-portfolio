@@ -13,7 +13,9 @@ export default function Sibur() {
       <ProjectHead
         title={
           <>
-            Promo materials for Sibur
+            Promo materials
+            <br />
+            for Sibur
             <br />
             employer brand
           </>

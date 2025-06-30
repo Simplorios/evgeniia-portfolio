@@ -94,6 +94,7 @@ export default function Home() {
               width: 1160,
               height: 524,
               src: `/evgeniia-portfolio/pepsico/head.png`,
+              className: 'object-cover object-top',
             }}
           >
             <CardTitle color="white" position="center">
@@ -128,9 +129,11 @@ export default function Home() {
               <p className="mt-4 text-lg text-primary-grey">
                 I develop complex identities,
                 <br />
-                social networks design, presintations,
+                social networks design,
                 <br />
-                trendy print materials, and websites
+                presentations, trendy print
+                <br />
+                materials, and websites
               </p>
               <p className="mt-4 text-lg text-primary-grey">
                 I work in Figma, Photoshop,
@@ -178,6 +181,7 @@ export default function Home() {
               width: 1160,
               height: 524,
               src: `/evgeniia-portfolio/say-what/head.png`,
+              className: 'object-cover object-bottom md:object-top',
             }}
           >
             <CardTitle color="white" position="center">
