@@ -405,11 +405,11 @@ export default function ICJI() {
       <Section className="px-4 md:px-0">
         {/* Mobile Layout */}
         <div className="md:hidden">
-          <h2 className="text-[2rem]/[1]">Tote bags</h2>
+          <h2 className="text-[2rem]/[1]">Tote bag</h2>
           <div className="mt-10">
             <Image
               src={`${BASE_PATH}products/bag.png`}
-              alt="Tote bags"
+              alt="Tote bag"
               width={350}
               height={311}
               className="w-full"
@@ -419,11 +419,11 @@ export default function ICJI() {
 
         {/* Desktop Layout */}
         <div className="hidden md:grid md:grid-cols-2 md:gap-x-12">
-          <h2 className="text-5xl/[1] flex items-start">Tote bags</h2>
+          <h2 className="text-5xl/[1] flex items-start">Tote bag</h2>
           <div className="flex justify-center">
             <Image
               src={`${BASE_PATH}products/bag.png`}
-              alt="Tote bags"
+              alt="Tote bag"
               width={620}
               height={551}
             />

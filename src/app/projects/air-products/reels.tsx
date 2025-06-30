@@ -84,7 +84,8 @@ export const Reels = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="flex justify-center mt-4 gap-2">
+      {/* Mobile navigation - dots */}
+      <div className="flex justify-center mt-4 gap-2 md:hidden">
         {reels.map((_, index) => (
           <button
             key={index}
@@ -94,6 +95,50 @@ export const Reels = () => {
             }`}
           />
         ))}
+      </div>
+
+      {/* Desktop navigation - arrows */}
+      <div className="hidden md:flex justify-center mt-4 gap-4">
+        <button
+          onClick={() => scrollTo(current > 0 ? current - 1 : reels.length - 1)}
+          className="w-12 h-12 rounded-full bg-gray-300 hover:bg-primary flex items-center justify-center transition-colors"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 12L6 8L10 4"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          onClick={() => scrollTo(current < reels.length - 1 ? current + 1 : 0)}
+          className="w-12 h-12 rounded-full bg-gray-300 hover:bg-primary flex items-center justify-center transition-colors"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 4L10 8L6 12"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </div>
   )

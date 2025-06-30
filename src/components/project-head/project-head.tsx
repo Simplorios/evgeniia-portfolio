@@ -29,11 +29,11 @@ export const ProjectHead: React.FC<ProjectHeadProps> = ({
           height={524}
           className="rounded-xl md:row-span-2 w-full"
         />
-        <p className="text-[1.25rem]/[1] md:text-[1.75rem]/[1]">
+        <p className="text-[1.25rem]/[2rem] md:text-[1.75rem]/[2rem]">
           {description}
         </p>
         <div className="px-6 py-8 md:px-10 md:py-11 md:self-end rounded-xl bg-primary">
-          <p className="text-[1.25rem]/[1] md:text-[1.75rem]/[1] text-primary-foreground">
+          <p className="text-[1.25rem]/[2rem] md:text-[1.75rem]/[2rem] text-primary-foreground">
             {task}
           </p>
         </div>

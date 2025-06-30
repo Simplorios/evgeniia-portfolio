@@ -21,8 +21,8 @@ export default function Page() {
         }
         imgSrc={`${BASE_PATH}head.png`}
         imgAlt="Say What head"
-        task="Task: to create an Instagram page based on the main brand book, while expressing the authenticity and spirit of the city of Tbilisi"
-        description="Development of Instagram feed for launching Uber Black in Tbilisi, as part of work at “Social Animals” agency team"
+        task="Task: to develop a full brand identity from scratch — including logo design, visual style, print materials, and branded assets"
+        description="Building a complete brand identity to support a confident and recognizable sports retail chain market launch"
       />
       <section className="mt-25 pb-35">
         <div className="container mx-auto px-4 md:px-0">
