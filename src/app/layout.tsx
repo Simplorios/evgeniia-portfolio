@@ -13,29 +13,32 @@ const edNimpkish = localFont({
   variable: '--font-nimpkish',
 })
 
+const baseUrl = new URL('https://simplorios.github.io/evgeniia-portfolio/')
+const title = 'Evgeniia Portfolio'
+const description = 'Design that amplifies your brand view work'
+
+const previewImage = {
+  url: '/evgeniia-portfolio/logo.svg',
+  width: 1200,
+  height: 630,
+}
+
 export const metadata: Metadata = {
-  title: 'Evgeniia Portfolio',
-  description: 'Design that amplifies your brand view work',
+  title,
+  description,
+  metadataBase: baseUrl,
   openGraph: {
     type: 'website',
-    url: 'https://simplorios.github.io/evgeniia-portfolio/',
-    title: 'Evgeniia Portfolio',
-    description: 'Design that amplifies your brand view work',
-    images: {
-      url: '/evgeniia-portfolio/logo.svg',
-      width: 1200,
-      height: 630,
-    },
+    url: baseUrl,
+    title,
+    description,
+    images: previewImage,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Evgeniia Portfolio',
-    description: 'Design that amplifies your brand view work',
-    images: {
-      url: '/evgeniia-portfolio/logo.svg',
-      width: 1200,
-      height: 630,
-    },
+    title,
+    description,
+    images: previewImage,
   },
 }
 
