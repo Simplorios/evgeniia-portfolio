@@ -18,7 +18,7 @@ const title = 'Evgeniia Portfolio'
 const description = 'Design that amplifies your brand view work'
 
 const previewImage = {
-  url: '/evgeniia-portfolio/logo.svg',
+  url: '/logo.svg',
   width: 1200,
   height: 630,
 }
