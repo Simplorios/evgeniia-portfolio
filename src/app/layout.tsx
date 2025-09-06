@@ -18,9 +18,9 @@ const title = 'Evgeniia Portfolio'
 const description = 'Design that amplifies your brand view work'
 
 const previewImage = {
-  url: '/logo.svg',
-  width: 1200,
-  height: 630,
+  url: '/wedding/head.png',
+  width: 559,
+  height: 524,
 }
 
 export const metadata: Metadata = {
